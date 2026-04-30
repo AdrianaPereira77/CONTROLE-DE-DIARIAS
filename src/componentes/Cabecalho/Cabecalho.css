@@ -1,7 +1,28 @@
-.cabecalho__root {
-  background-color: var(--cor-primaria-clara);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 16px;
+cabecalho-app {
+background-color: #ffffff;
+padding: 15px 20px;
+border-bottom: 1px solid #e0e0e0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.cabecalho-esquerda {
+display: flex;
+flex-direction: column;
+}
+.cabecalho-esquerda h1 {
+margin: 0;
+font-size: 1.8em;
+color: #333;
+}
+.info-usuario {
+display: flex;
+align-items: center;
+gap: 10px;
+margin-top: 5px;
+}
+.email-usuario {
+font-size: 0.9em;
+color: #666;
 }

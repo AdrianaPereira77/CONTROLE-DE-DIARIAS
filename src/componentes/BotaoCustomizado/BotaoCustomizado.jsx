@@ -1,19 +1,10 @@
-import "./BotaoCustomizado.css";
+import React from 'react';
+import './BotaoCustomizado.css';
 
-function BotaoCustomizado({ tipo, aoClicar, children }) {
-  let classes = "botao-customizado__root";
-
-  switch (tipo) {
-    case "primario":
-      classes += " botao-customizado__primario";
-      break;
-    case "secundario":
-      classes += " botao-customizado__secundario";
-      break;
-  }
-
+function BotaoCustomizado({ children, onClick, tipo = 'primario', icone, className = '' }) {
   return (
-    <button className={classes} onClick={aoClicar}>
+    <button className={`botao-customizado ${tipo} ${className}`} onClick={onClick}>
+      {icone && <i className={icone}></i>}
       {children}
     </button>
   );

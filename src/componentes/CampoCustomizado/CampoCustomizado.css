@@ -1,17 +1,34 @@
-.campo-customizado__root {
+.campo-customizado {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  margin-bottom: 15px;
 }
-
-.campo-customizado__input {
-  width: 100%;
-  padding: 8px;
+.campo-customizado label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+  font-size: 0.9em;
 }
-
-.campo-customizado__obrigatorio {
-  color: var(--cor-erro);
-  font-weight: bold;
+.campo-customizado input,
+.campo-customizado select,
+.campo-customizado textarea {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1em;
+  min-height: 44px; /* Altura mínima para toque */
+  box-sizing: border-box;
+}
+.campo-customizado input:focus,
+.campo-customizado select:focus,
+.campo-customizado textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.campo-customizado textarea {
+  resize: vertical;
+  min-height: 80px;
 }
 
 

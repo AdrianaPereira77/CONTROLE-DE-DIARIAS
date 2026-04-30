@@ -1,8 +1,9 @@
-.rodape__root {
-  background-color: var(--cor-primaria-clara);
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--cor-texto-claro)  
+.rodape-app {
+background-color: #f8f9fa;
+color: #6c757d;
+text-align: center;
+padding: 15px 20px;
+border-top: 1px solid #e9ecef;
+font-size: 0.9em;
+margin-top: auto; /* Empurra o rodapé para baixo */
 }

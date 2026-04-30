@@ -1,11 +1,10 @@
-import "./Rodape.css";
+import React from 'react';
+import './Rodape.css';
 
 function Rodape() {
-  const anoAtual = new Date().getFullYear();
-
   return (
-    <footer className="rodape__root">
-      Copyright © {anoAtual} - Todos os direitos reservados
+    <footer className="rodape-app">
+      <p>&copy; {new Date().getFullYear()} Sistema de Diárias. Todos os direitos reservados.</p>
     </footer>
   );
 }

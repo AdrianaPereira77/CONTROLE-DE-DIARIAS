@@ -1,12 +1,11 @@
-import "./Avatar.css";
-
-const Avatar = ({ nome, imagem }) => {
-  const primeirasLetras = nome.split(" ").map(item => item[0]).join("").toUpperCase();
+import React from 'react';
+import './Avatar.css';
+function Avatar({ nome, iniciais }) {
   return (
-    <div className="avatar__root">
-      {imagem ? <img src={imagem} alt={nome} /> : primeirasLetras}
+    <div className="avatar-container">
+      <div className="avatar-circulo">{iniciais}</div>
+      {nome && <span className="avatar-nome">{nome}</span>}
     </div>
   );
-};
-
+}
 export default Avatar;

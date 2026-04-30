@@ -1,14 +1,21 @@
-.avatar__root {
-  background-color: var(--cor-cinza);
+.avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.avatar-circulo {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  display: grid;
-  place-content: center;
-  color: var(--cor-texto-claro);
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.9em;
 }
-
-.avatar__root img {
-  border-radius: 50%;
-  width: 100%;
+.avatar-nome {
+  font-size: 0.9em;
+  color: #333;
 }
