@@ -1,39 +1,12 @@
-.conteudo-principal {
-  padding: 20px;
-  flex-grow: 1;
-  max-width: 1200px; /* Largura máxima para o conteúdo */
-  margin: 20px auto; /* Centraliza o conteúdo */
-}
-.diarias-section {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-top: 20px;
-}
-.diarias-header {
+.principal__root {
+  padding: 16px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.principal__titulo {
+  display: flex;
   align-items: center;
-  margin-bottom: 20px;
-}
-.diarias-header h2 {
-  margin: 0;
-  font-size: 1.5em;
-  color: #333;
-}
-/* Estilos para o botão Nova Diária no Dashboard */
-.diarias-header .botao-customizado {
-  background-color: #343a40; /* Cor escura para o botão */
-  color: white;
-}
-.diarias-header .botao-customizado:hover {
-  background-color: #495057;
-}
-/* Media Queries para Responsividade */
-@media (max-width: 768px) {
-  .conteudo-principal {
-    padding: 10px;
-    margin: 10px auto;
-  }
+  gap: 8px;
 }

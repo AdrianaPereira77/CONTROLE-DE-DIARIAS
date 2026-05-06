@@ -8,7 +8,7 @@ html,
 body {
   height: 100%;
   background-color: var(--cor-fundo-padrao);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Ou outra fonte de sua preferência */
   color: var(--cor-texto-padrao)
 }
 
@@ -19,13 +19,13 @@ body {
 }
 
 :root {
- --cor-primaria-clara: #7986cb;
- --cor-primaria: #3f50b5;
- --cor-primaria-escura: #303f9f;
+ --cor-primaria-clara: #81a2d1; /* Azul mais claro */
+ --cor-primaria: #3f69a8;  /* Azul corporativo */
+ --cor-primaria-escura: #2a4a7a; /* Azul mais escuro */
 
- --cor-secundaria-clara: #ffab40;
- --cor-secundaria: #ff9100;
- --cor-secundaria-escura: #ff6d00;
+ --cor-secundaria-clara: #a8d181; /* Verde mais claro */
+ --cor-secundaria: #69a83f;  /* Verde para destaque/sucesso */
+ --cor-secundaria-escura: #4a7a2a; /* Verde mais escuro */
 
  --cor-fundo-padrao: #f7f7f7;
 

@@ -7,12 +7,10 @@ import "./App.css";
 // imports de componentes/paginas internas do projeto React (arquivos .jsx)
 import Cabecalho from "./componentes/Cabecalho/Cabecalho";
 import Rodape from "./componentes/Rodape/Rodape";
-// imports de páginas
-import CadastroCliente from "./paginas/CadastroCliente/CadastroCliente";
-import ListaClientes from "./paginas/ListaClientes/ListaClientes";
-import ListaProdutos from "./paginas/ListaProdutos/ListaProdutos";
-import ListaTarefas from "./paginas/ListaTarefas/ListaTarefas";
+// imports de páginas para o controle de diárias
 import PaginaInicial from "./paginas/PaginaInicial/PaginaInicial";
+import ListaDiarias from "./paginas/ListaDiarias/ListaDiarias"; // Você precisará criar este componente
+import CadastroDiaria from "./paginas/CadastroDiaria/CadastroDiaria"; // Você precisará criar este componente
 
 const roteador = createBrowserRouter([
   {
@@ -20,23 +18,15 @@ const roteador = createBrowserRouter([
     element: <PaginaInicial />,
   },
   {
-    path: "lista-produtos",
-    element: <ListaProdutos />,
+    path: "lista-diarias",
+    element: <ListaDiarias />,
   },
   {
-    path: "lista-tarefas",
-    element: <ListaTarefas />,
+    path: "cadastro-diaria/:diariaId?", // Parâmetro opcional para criar (sem id) ou editar (com id)
+    element: <CadastroDiaria />,
   },
   {
-    path: "lista-clientes",
-    element: <ListaClientes />,
-  },
-  {
-    path: "cadastro-cliente/:clienteId?", // o "?" torna o parâmetro opcional, ou seja, pode ser acessado tanto para criar um novo cliente (sem id) quanto para editar um cliente existente (com id)
-    element: <CadastroCliente />,
-  },
-  {
-    path: "*", //
+    path: "*", // Rota coringa para páginas não encontradas
     element: <h3>Página não encontrada!!</h3>,
   },
 ]);

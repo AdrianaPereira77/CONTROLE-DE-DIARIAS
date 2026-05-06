@@ -1,0 +1,36 @@
+/* Estilo para o botão flutuante de adicionar */
+.lista-diarias__botao-adicionar {
+  position: fixed;
+  bottom: 64px;
+  right: 24px;
+  cursor: pointer;
+}
+
+/* Estilo para cada item individual da lista de diárias */
+.lista-diarias__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid var(--cor-cinza); /* Linha divisória entre os itens */
+}
+
+/* Contêiner para as informações principais dentro de cada item da diária */
+.lista-diarias__item-informacoes {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaçamento entre as informações (ex: data, projeto, valor) */
+}
+
+/* Estilo para a mensagem exibida quando a lista está vazia */
+.lista-diarias__mensagem-vazia {
+  text-align: center;
+  margin-top: 32px;
+  color: var(--cor-texto-padrao);
+}
+
+/* Contêiner para os botões de ação (Editar, Excluir) dentro de cada item da diária */
+.lista-diarias__item-acoes {
+  display: flex;
+  gap: 8px; /* Espaçamento entre os botões de ação */
+}

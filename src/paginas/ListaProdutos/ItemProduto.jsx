@@ -1,24 +1,34 @@
-import "./ItemProduto.css";
+import "./itemDiaria.css"; // Importa o CSS adaptado para ItemDiaria
 
-function ItemProduto({ produto }) {
+function ItemDiaria({ diaria }) {
   return (
-    <div className="item-produto__root">
-      <span>{produto.nome}</span>
-      <span>{produto.preco}</span>
-
-      <div className="item-produto__cores">
-        {produto.cores.map((aquarela, contagem) => {
-          return (
-            <div
-              key={contagem}
-              className="item-produto__cor"
-              style={{ backgroundColor: aquarela }}
-            />
-          );
-        })}
+    <div className="item-diaria__root">
+      <div className="item-diaria__info-linha">
+        <span className="item-diaria__data">
+          <strong>Data:</strong> {diaria.data}
+        </span>
+        <span className="item-diaria__valor">
+          R$ {parseFloat(diaria.valor).toFixed(2)}
+        </span>
       </div>
+
+      <span className="item-diaria__descricao">
+        {diaria.descricao}
+      </span>
+
+      {diaria.projeto && (
+        <span className="item-diaria__projeto">
+          <strong>Projeto:</strong> {diaria.projeto}
+        </span>
+      )}
+
+      {diaria.observacoes && (
+        <p className="item-diaria__observacoes">
+          {diaria.observacoes}
+        </p>
+      )}
     </div>
   );
 }
 
-export default ItemProduto;
+export default ItemDiaria;
